@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almacén San Cono · Control de stock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">SC</div>
+      <div><strong>Almacén San Cono</strong><span>Control de stock</span></div>
+    </div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="dashboard"><span>01</span> Inicio</button>
+      <button class="nav-item" data-page="products"><span>02</span> Productos</button>
+      <button class="nav-item" data-page="sales"><span>03</span> Ventas</button>
+      <button class="nav-item" data-page="orders"><span>04</span> Órdenes de compra</button>
+      <button class="nav-item" data-page="alerts"><span>05</span> Alertas</button>
+    </nav>
+    <div class="sidebar-footer"><span class="status-dot"></span> Sistema operativo</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow" id="section-number">01 / CONTROL</p>
+        <h1 id="page-title">Inicio</h1>
+      </div>
+      <div class="top-actions">
+        <span class="today" id="today"></span>
+        <button class="primary" id="new-product">+ Nuevo producto</button>
+      </div>
+    </header>
+    <div id="app"></div>
+  </main>
+</div>
+
+<div class="modal-backdrop hidden" id="modal-backdrop">
+  <div class="modal" id="modal"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
