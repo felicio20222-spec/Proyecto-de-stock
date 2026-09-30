@@ -910,3 +910,25 @@ label select:focus {
     display: none;
   }
 }
+/* ==================================================
+   Nuevos controles: compras, categorías y distribuidoras
+================================================== */
+.toolbar-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 4px 0 14px;
+}
+@media (max-width: 760px) {
+  .sidebar nav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .toolbar-actions {
+    justify-content: flex-start;
+  }
+}
