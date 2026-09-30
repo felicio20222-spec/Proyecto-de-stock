@@ -1,0 +1,266 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Coca-Cola 1.5L",
+      "category": "Bebidas",
+      "price": 95,
+      "stock": 18,
+      "minStock": 10,
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Agua Mineral 2L",
+      "category": "Bebidas",
+      "price": 65,
+      "stock": 7,
+      "minStock": 10,
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Papas Chips 150g",
+      "category": "Snacks",
+      "price": 120,
+      "stock": 4,
+      "minStock": 8,
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Detergente 500ml",
+      "category": "Limpieza",
+      "price": 145,
+      "stock": 12,
+      "minStock": 6,
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Leche Entera 1L",
+      "category": "Lácteos",
+      "price": 58,
+      "stock": 0,
+      "minStock": 8,
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Pan de Molde",
+      "category": "Panadería",
+      "price": 110,
+      "stock": 3,
+      "minStock": 6,
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "Alfajor Chocolate",
+      "category": "Golosinas",
+      "price": 55,
+      "stock": 22,
+      "minStock": 10,
+      "active": true
+    },
+    {
+      "id": 8,
+      "name": "Jabón de Tocador",
+      "category": "Higiene",
+      "price": 72,
+      "stock": 9,
+      "minStock": 5,
+      "active": true
+    },
+    {
+      "id": 9,
+      "name": "Jugo en Polvo",
+      "category": "Bebidas",
+      "price": 35,
+      "stock": 0,
+      "minStock": 6,
+      "active": true
+    },
+    {
+      "id": 10,
+      "name": "Galletitas Saladas",
+      "category": "Snacks",
+      "price": 88,
+      "stock": 15,
+      "minStock": 8,
+      "active": true
+    },
+    {
+      "id": 11,
+      "name": "Lavandina 1L",
+      "category": "Limpieza",
+      "price": 78,
+      "stock": 5,
+      "minStock": 7,
+      "active": true
+    },
+    {
+      "id": 12,
+      "name": "Yogur Frutilla 1L",
+      "category": "Lácteos",
+      "price": 92,
+      "stock": 10,
+      "minStock": 6,
+      "active": false
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "productId": 1,
+      "product": "Coca-Cola 1.5L",
+      "cashier": "Laura M.",
+      "quantity": 3,
+      "total": 285,
+      "date": "2026-09-08"
+    },
+    {
+      "id": 2,
+      "productId": 7,
+      "product": "Alfajor Chocolate",
+      "cashier": "Carlos R.",
+      "quantity": 5,
+      "total": 275,
+      "date": "2026-09-08"
+    },
+    {
+      "id": 3,
+      "productId": 10,
+      "product": "Galletitas Saladas",
+      "cashier": "Laura M.",
+      "quantity": 2,
+      "total": 176,
+      "date": "2026-09-07"
+    },
+    {
+      "id": 4,
+      "productId": 3,
+      "product": "Papas Chips 150g",
+      "cashier": "Carlos R.",
+      "quantity": 4,
+      "total": 480,
+      "date": "2026-09-07"
+    },
+    {
+      "id": 5,
+      "productId": 1,
+      "product": "Coca-Cola 1.5L",
+      "cashier": "Carlos R.",
+      "quantity": 2,
+      "total": 190,
+      "date": "2026-09-06"
+    },
+    {
+      "id": 6,
+      "productId": 8,
+      "product": "Jabón de Tocador",
+      "cashier": "Laura M.",
+      "quantity": 3,
+      "total": 216,
+      "date": "2026-09-06"
+    },
+    {
+      "id": 7,
+      "productId": 6,
+      "product": "Pan de Molde",
+      "cashier": "Laura M.",
+      "quantity": 2,
+      "total": 220,
+      "date": "2026-09-05"
+    },
+    {
+      "id": 8,
+      "productId": 7,
+      "product": "Alfajor Chocolate",
+      "cashier": "Carlos R.",
+      "quantity": 8,
+      "total": 440,
+      "date": "2026-09-05"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "number": "OC-001",
+      "supplier": "Distribuidora Norte",
+      "date": "2026-09-03",
+      "status": "Recibido",
+      "total": 5250,
+      "items": [
+        {
+          "productId": 2,
+          "product": "Agua Mineral 2L",
+          "quantity": 30,
+          "unitCost": 42
+        },
+        {
+          "productId": 5,
+          "product": "Leche Entera 1L",
+          "quantity": 50,
+          "unitCost": 48
+        },
+        {
+          "productId": 9,
+          "product": "Jugo en Polvo",
+          "quantity": 20,
+          "unitCost": 39
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "number": "OC-002",
+      "supplier": "Mayorista San José",
+      "date": "2026-09-10",
+      "status": "Pendiente",
+      "total": 3920,
+      "items": [
+        {
+          "productId": 3,
+          "product": "Papas Chips 150g",
+          "quantity": 20,
+          "unitCost": 82
+        },
+        {
+          "productId": 6,
+          "product": "Pan de Molde",
+          "quantity": 20,
+          "unitCost": 74
+        },
+        {
+          "productId": 11,
+          "product": "Lavandina 1L",
+          "quantity": 20,
+          "unitCost": 40
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "number": "OC-003",
+      "supplier": "Lácteos del Centro",
+      "date": "2026-09-12",
+      "status": "Parcial",
+      "total": 2800,
+      "items": [
+        {
+          "productId": 5,
+          "product": "Leche Entera 1L",
+          "quantity": 25,
+          "unitCost": 48
+        },
+        {
+          "productId": 12,
+          "product": "Yogur Frutilla 1L",
+          "quantity": 20,
+          "unitCost": 56
+        }
+      ]
+    }
+  ]
+}
